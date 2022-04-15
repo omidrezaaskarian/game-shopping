@@ -1,0 +1,287 @@
+@font-face {
+    font-family: GeForce;
+    src: url(Fonts/GeForce_Bold.otf);
+}
+@font-face {
+    font-family:DinPro ;
+    src: url(Fonts/DINPro-Light.otf);
+}
+body{
+    font-family: GeForce;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #000;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.bg-header{
+    width: 100%;
+  height: 520px;
+    background-image: url(./assets/header.jpg);
+    background-repeat: no-repeat;
+}
+.bg-header img{
+   object-fit: cover;
+}
+.content{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.paragraph{
+    max-width: 390px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.d-flex{
+    display: flex;
+}
+.d-grid{
+    display: grid;
+}
+.flex-col{
+    flex-direction: column;
+}
+.j-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.title{
+    color: #fff;
+}
+.description{
+    color: greenyellow;
+}
+.paragraph{
+    color: #fff;
+}
+.end-text{
+    color: greenyellow;
+    line-height: 1.3;
+}
+.logo{
+    margin-top: 20px;
+}
+.first__section{
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/turing-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+}
+.t-section{
+    color: #fff;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.ui-top{
+    width: 100%;
+    /* height: 100px; */
+}
+.ui-bottom{
+    width: 100%;
+}
+.ui-top > img , .ui-bottom > img{
+    width: 90%;
+}
+.content-f-section{
+    margin-top: 40px;
+}
+.first__section-content{
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 120px;
+}
+.content-title{
+    color: greenyellow;
+}
+.content-description{
+    color: #fff;
+}
+.second__section{
+    width: 100%;
+    height: 540px;
+    background-image: url(./assets/rtx-erleben.jpg);
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+    position: relative;
+}
+.content-s-section{
+    color: #fff;
+    max-width: 35%;
+    padding: 0 120px;
+  
+}
+.content-s-section>h2{
+    font-size: 32px;
+}
+.third__section{
+    width: 100%;
+    height: auto;
+    /* background-color: #000; */
+    padding: 40px 0;
+}
+.card-wrapper{
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 120px;
+}
+.content-s-section__title{
+    color: greenyellow;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.content-s-section__description{
+    color: #fff;
+    text-align: justify;
+}
+.card-img{
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    min-height: 200px;
+}
+.card{
+    justify-content: flex-start;
+}
+.forth__section{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    /* background-color: #000; */
+    border-bottom: 3px solid greenyellow;
+}
+.btn{
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: rgb(141, 221, 22);
+    color: #fff;
+    max-width: 150px;
+    border: none;
+}
+footer{
+   padding: 40px 0 80px 0;
+}
+.text{
+    margin-top: 20px;
+}
+.footer-tex{
+    font-size: 14px;
+    color: rgb(122, 122, 122);
+}
+.img-sec{
+    width: calc(100% - 32px);
+}
+@media only screen and (min-width : 1001px) and (max-width : 1249px) {
+    .content {
+        right: 5%;
+    }
+}
+@media only screen and (min-width : 720px) and (max-width : 1000px){
+    .card-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .second__section{
+        background-image: url(./assets/rtx-erleben-medium.jpg);
+    }
+    .bg-header {
+        background-image: url(./assets/header-medium.jpg);
+    }
+    .first__section-content{
+        gap: 16px;
+    }
+}
+@media only screen and (min-width : 480px) and (max-width : 719px){
+    .bg-header {
+        background-image: url(./assets/header-small.jpg);
+    }
+    .t-section{
+        font-size: 20px;
+    }
+    .first__section-content{
+    gap: 16px;
+    grid-template-columns: 1fr;
+    padding: 0 50px;
+    }
+    .content-title{
+        font-size: 16px;
+    }
+    .content-description{
+        font-size: 14px;
+    }
+    .second__section{
+        background-image: url(./assets/rtx-erleben-small.jpg);
+    }
+    .content-s-section{
+        max-width: unset;
+        padding: 243px 0 0 50;
+    }
+    .t-section-left{
+        font-size: 20px;
+    }
+    .card-wrapper{
+        gap: 16px;
+        grid-template-columns: 1fr;
+        padding: 0 50px;
+    }
+   
+}
+@media only screen and (min-width:0px) and (max-width : 479px){
+    .bg-header {
+        background-image: url(./assets/header-small.jpg);
+    }
+    .t-section{
+        font-size: 20px;
+    }
+    .first__section-content{
+    gap: 16px;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    }
+    .content-title{
+        font-size: 16px;
+    }
+    .content-description{
+        font-size: 14px;
+    }
+    .second__section{
+        background-image: url(./assets/rtx-erleben-small.jpg);
+    }
+    .content-s-section{
+        max-width: unset;
+        padding: 310px 0 0 50;
+    }
+    .t-section-left{
+        font-size: 20px;
+    }
+    .card-wrapper{
+        gap: 16px;
+        grid-template-columns: 1fr;
+        padding: 0 50px;
+    }
+    .bg-header{
+        background-position: top;
+    }
+    .content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    .t-section-left{
+        font-size: 20px;
+    }
+    .card-wrapper{
+        padding: 0 20px;
+    }
+}
